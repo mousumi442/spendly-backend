@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
+console.log("MONGO_URI starts with:", process.env.MONGO_URI?.substring(0, 30));
+
 const authRoutes = require("./routes/auth");
 const expenseRoutes = require("./routes/expenses");
 
